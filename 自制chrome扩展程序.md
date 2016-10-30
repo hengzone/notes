@@ -83,7 +83,7 @@ function isChina(str) {
     return true;
 }
 
-var select = chrome.contextMenus.create({"title":"有道翻译","contexts":["selection"],"onclick":selection});
+var select = chrome.contextMenus.create({"title":"划词翻译","contexts":["selection"],"onclick":selection});
 ```
 其中`API_key`和`keyfrom'是之前申请接口后有道提供的接口使用凭证。
 这样在浏览器页面选中一些字符后点击右键就能看到一个**有道翻译**的选项，点击后就会执行上述程序段中的方法，先判断是否有中文，如果没有则向查询接口发出请求，如果请求成功就将请求内容弹出来。
