@@ -46,7 +46,7 @@
   ],
   "browser_action": {
     "default_icon": "icons/32.png",
-    "default_title" : "有道翻译"
+    "default_title" : "划词翻译"
   },
   "background": {
     "scripts": ["myScript.js"],
