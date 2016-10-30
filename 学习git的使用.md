@@ -56,3 +56,20 @@ git push origin master
 git remote add origin <server>
 ```
 这样就能把改动推动到指定的服务器上去了。
+## 个人犯错经历
+1.提交远程仓库的时候报错
+```txt
+To github.com:hengzone/notes.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:hengzone/notes.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+这是因为仓库中的**README.md**文件不在本地代码目录中，所以要先合并代码才行
+```linux
+git pull --rebase origin master
+```
+> PS : pull = fetch + merge
+
