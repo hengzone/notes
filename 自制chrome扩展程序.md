@@ -29,33 +29,25 @@
 首先创建一个**manifest.json**
 ```json
 {
-  // 以下为必写
-  "manifest_version": 2, // 必须为2，1号版本已弃用
-  "name": "有道翻译插件", // 扩展程序名称
-  "version": "1.0", // 版本号
-
-  "description": 闲着蛋疼自己写的chrome扩展程序 -- by Felix",
+  "manifest_version": 2,
+  "name": "有道翻译插件",
+  "version": "1.0",
+  "description": "闲着蛋疼自己写的chrome扩展程序 -- by Felix",
   "icons": {
     "16": "icons/16.png",
     "32": "icons/32.png",
     "64": "icons/64.png"
   },
   "author": "Felix",
-
-  // 根据自己使用的权限填写
   "permissions": [
     "*://fanyi.youdao.com/*",
     "contextMenus",
     "tabs"
   ],
-
-  // browser_action，左键点击右上角插件logo时，弹出的popup框。不填此项则点击logo不会有用
   "browser_action": {
     "default_icon": "icons/32.png",
     "default_title" : "有道翻译"
   },
-
-  // background，后台执行的文件，一般只需要指定js即可。会在浏览器打开后全局范围内后台运行
   "background": {
     "scripts": ["myScript.js"],
     "persistent": false
