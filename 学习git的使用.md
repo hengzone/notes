@@ -4,7 +4,7 @@
 借此记录一些git的基础知识。
 ## 准备
 账号那些的注册下就可以，正常的一些账号设置结束后就可以下载软件了。
-我是**Windows**环境所以下载了(Windows版 git)[https://git-for-windows.github.io/]。
+我是**Windows**环境所以下载了[Windows版 git](https://git-for-windows.github.io/)。
 ## 配置git
 首先在本地创建**SSH key**
 ```linux
