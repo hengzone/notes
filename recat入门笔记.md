@@ -44,7 +44,7 @@ React认为一个组件应该具有如下特征：
 ```linux
 git clone https://github.com/facebook/react
 ```
-当然也可以直接去(react官网)[https://facebook.github.io/react/]上去下载压缩文件，里面包含了需要用到的库文件。按照路径引用就可以了。
+当然也可以直接去[react官网](https://facebook.github.io/react/)上去下载压缩文件，里面包含了需要用到的库文件。按照路径引用就可以了。
 其中需要注意的是`<script>`标签里的**type**属性是`text/babel`，这是**react**独有的**jsx**语法，所有用到**jsx**的地方都要加上`type="text/babel"`，因为它与**JavaScript**语法不兼容。
 ## ReactDOM.render()
 这是**react**的最基本方法，用于将内容插入到页面的指定区域中去。
