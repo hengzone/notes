@@ -40,7 +40,7 @@ React认为一个组件应该具有如下特征：
 </html>
 ```
 首先是上面用到的三个库：**react.j**、**react-dom.js**、**browser.min.js**，**react.js**是**React**的核心库，**react-dom.js**是提供与 **DOM**相关的功能，**Browser.js**的作用是将**JSX**语法转为**JavaScript**语法，这一步很消耗时间，实际上线的时候，应该将它放到服务器完成。
-乘着前天看**git**的余热，这里用**git**下载**react**
+趁着前天看**git**的余热，这里用**git**下载**react**
 ```linux
 git clone https://github.com/facebook/react
 ```
